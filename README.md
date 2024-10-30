@@ -1,5 +1,11 @@
 # API de Gerenciamento de Pedidos
 
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.5-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
+[![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
+
+## 📋 Sobre o Projeto
+
 Sistema de gerenciamento de pedidos desenvolvido com Spring Boot, implementando padrões de projeto como Strategy, Template Method e Factory.
 
 ## 🛠 Tecnologias Utilizadas
@@ -18,6 +24,13 @@ Sistema de gerenciamento de pedidos desenvolvido com Spring Boot, implementando 
 - **Factory**: Criação de diferentes tipos de pedidos
 - **Singleton**: Gerenciamento de configurações globais
 
+ ## 📝 Funcionalidades
+- Criação de pedidos com diferentes tipos de clientes
+- Cálculo automático de desconto para clientes VIP
+- Gerenciamento completo do ciclo de vida do pedido
+- Integração com banco de dados H2
+
+
 ## 📦 Instalação
 
 ```bash
@@ -32,6 +45,7 @@ cd pedido-api
 
 # Execute o projeto
 ./mvnw spring-boot:run
+
 
 🚀 Endpoints
 Pedidos
@@ -73,12 +87,6 @@ Resposta
         "telefone": "1234567890"
     }
 }
-
-📝 Funcionalidades
-Criação de pedidos com diferentes tipos de clientes
-Cálculo automático de desconto para clientes VIP
-Gerenciamento completo do ciclo de vida do pedido
-Integração com banco de dados H2
 
 ⚙️ Configuração
 O arquivo application.properties contém as configurações do banco de dados H2:
